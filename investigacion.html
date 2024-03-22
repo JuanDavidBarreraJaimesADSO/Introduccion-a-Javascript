@@ -1,0 +1,884 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad Javascript</title>
+  <link rel="stylesheet" href="style.css">
+  <script src=""></script>
+</head>
+
+<body>
+  <header class="header">
+
+    <ul class="header__nav-list">
+      <li class="header__nav-item">
+        <ul class="header__nav-list">
+          <img class="header__icon" src="images/js.png" alt="Icono del sitio web">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Investigacion Javascript</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link">Todos los ejercicios</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Desarrollo de Ejercicios</a>
+          </li>
+        </ul>
+    </ul>
+  </header>
+
+  <h1 class="ejercicio__titulo"> Investigación </h1>
+  <a href="#" class="header__nav-link">Investigacion Javascript</a>
+  <h3><a href="https://docs.google.com/document/d/10hfu1v7XLyTTKk-0yziRHFyALkzzG6DwMWIZh_Vs7ac/edit?usp=sharing" target="_blank">Enlace directo de la investigación</a></h3>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+    
+    html{
+      font-family: "Madimi One", sans-serif;
+    }
+    .header {
+      border: 1px solid black;
+    
+    }
+    .header__icon{
+      width: 5vh;
+      height: 5vh;
+      margin-right: 50vh;
+    }
+    
+    
+    /* **********HEADER*********** */
+    .header__nav-list {
+      display: flex;
+      background-color: yellow;
+      justify-content: flex-start; 
+      padding: auto;
+      margin: auto;
+    }
+    .header__nav-item {
+      list-style: none;
+      margin: 7px;
+      background-color: transparent;
+      border: none;
+      margin-right: 10vh;
+    }
+    
+    .header__nav-link {
+      color: #000;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    
+    .header__nav-link:hover {
+      color: #999860;
+    }
+    
+    .ejercicio_titulo{
+        text-align: center;
+    }
+    
+    </style>
+    
+
+
+<p><pre>
+<h1>Variables reservadas de javascript</h1>
+<h2>Palabras JavaScript Reservados</h2>
+En JavaScript no puede utilizar estas palabras reservadas como variables, etiquetas o nombres de las funciones:
+
+<p>
+abstract
+arguments
+boolean
+break
+byte
+case
+catch
+char
+class*
+const
+continue
+debugger
+default
+delete
+do
+double
+else
+enum*
+eval
+export*
+extends*
+false
+final
+finally
+float
+for
+function
+goto
+if
+implements
+import*
+in
+instanceof
+int
+interface
+let
+long
+native
+new
+null
+package
+private
+protected
+public
+return
+short
+static
+super*
+switch
+synchronized
+this
+throw
+throws
+transient
+true
+try
+typeof
+var
+void
+volatile
+while
+with
+yield
+
+</p>
+
+
+
+
+
+Hoisting en javascript 
+
+Es un comportamiento de JavaScript que hace que las variables y las funciones declaradas se trasladen (hoist) al principio del ámbito en el que se declaran. Esto significa que las variables y las funciones declaradas se pueden usar antes de que se declaren realmente. 
+
+El hoisting en JavaScript permite que las variables y funciones se utilicen antes de ser declaradas.
+
+En este caso, la declaración de var x se "eleva" al inicio del contexto de ejecución, pero la asignación se queda en su lugar original.
+
+
+Imprimirá "undefined" porque la variable x se declara antes de que se use. Sin embargo, debido al hoisting, la variable x se traslada al principio del ámbito de la función foo(), por lo que la función puede acceder a ella.
+
+
+Variable
+
+Con la palabra clave var. “Ya no es usada”  Por ejemplo, var x = 42. Esta sintaxis se puede utilizar para declarar variables locales y globales, dependiendo del contexto de ejecución.
+Con la palabra clave const o let. Por ejemplo, let y = 13. Esta sintaxis se puede utilizar para declarar una variable local con ámbito de bloque.
+Una variable en JavaScript es un contenedor para almacenar datos. Se puede declarar con var, let, o const.
+
+
+
+Ámbitos
+
+Ámbito global: El ámbito global es el ámbito más amplio en JavaScript. Todas las variables y funciones declaradas fuera de cualquier función se encuentran en el ámbito global.
+
+
+Ámbito de bloque: El ámbito de bloque es un ámbito creado por las llaves {}. Las variables y las funciones declaradas dentro de un bloque se encuentran en el ámbito de bloque.
+
+
+Ámbito de comportamiento: El ámbito de comportamiento es un ámbito creado por una función. Las variables y las funciones declaradas dentro de una función se encuentran en el ámbito de comportamiento de la función.
+
+
+
+
+
+
+
+
+Constantes 
+
+Una constante es una variable que no se puede modificar una vez que se ha asignado un valor. Las constantes se declaran con la palabra clave const las constantes no pueden ser reasignadas después de su inicialización.
+
+
+
+
+
+
+
+
+
+
+
+
+String
+
+Un string es una secuencia de caracteres. Los strings se pueden declarar de varias maneras y los caracteres diferentes , pueden ser letras, números, símbolos, espacios, o incluso caracteres especiales. Los strings se utilizan para representar y manipular texto en un programa.
+
+Secuencia Ordenada: Los caracteres en un string están dispuestos en una secuencia ordenada, y cada carácter tiene un índice que indica su posición en esa secuencia.
+Inmutabilidad: En muchos lenguajes de programación, incluyendo JavaScript, los strings son inmutables, lo que significa que una vez que se crea un string, no se puede modificar directamente. Las operaciones de manipulación de strings, como la concatenación, crean nuevos strings en lugar de modificar el original.
+Representación de texto: Los strings se utilizan para representar texto legible por humanos y pueden contener cualquier combinación de caracteres, incluyendo letras, números y símbolos.
+Delimitadores: Los strings pueden crearse utilizando comillas simples (') o dobles ("), y en JavaScript también se pueden usar comillas invertidas (`) para crear template strings, que permiten la interpolación de variables.
+
+Concatenación de Strings:
+La concatenación es la unión de dos o más strings. Puedes realizarla utilizando el operador “+“:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Length 
+
+La propiedad length de un string representa la longitud del string. Se puede usar para acceder a la longitud del string o para iterar sobre los caracteres de un string.
+
+
+
+Para iterar sobre los caracteres de un string, se puede usar un bucle for con la propiedad length.
+
+
+
+
+También se puede usar la propiedad length para castear un string a un número.
+
+
+
+Template strings 
+
+Los template strings son una forma de declarar strings que permite usar expresiones JavaScript dentro de los strings. Se definen utilizando comillas invertidas (`) y ${} para incluir variables o expresiones:
+
+
+
+
+
+Booleanos 
+
+Los booleanos son valores que pueden tener dos valores: true o false.
+
+Los booleanos se usan para representar valores lógicos, como la verdad o la falsedad de una expresión.
+
+
+
+Primitivos 
+
+Los datos primitivos son tipos de datos básicos que no se pueden dividir en tipos más simples
+
+Los datos primitivos en JavaScript incluyen:
+String: Secuencia de caracteres.
+Number: Números, ya sea enteros o de punto flotante.
+Boolean: true o false.
+Null: Representa la ausencia intencional de cualquier valor o representación de objeto.
+Undefined: Representa un valor no definido o ausente.
+Symbol: Introducido en ECMA Script 6, es un tipo de dato único e inmutable.
+Funciones
+Una función es un bloque de código que se puede ejecutar de forma independiente.
+Las funciones se declaran usando la palabra clave function.
+
+
+
+
+Las funciones se pueden usar para realizar tareas complejas, como procesar datos, validar entradas o generar salidas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-Que son funciones , declarar  funciones expresadas y anónimas 
+
+Las funciones expresadas son funciones que se declaran de forma literal.
+Las funciones expresadas se declaran usando la palabra clave function seguida de la expresión que representa la función.
+Las funciones anónimas son funciones que no tienen nombre.
+Las funciones anónimas se declaran usando la palabra clave function seguida de la expresión que representa la función, sin el nombre de la función.
+Funciones 
+
+
+Arreglos
+Un arreglo es una colección de datos del mismo tipo. los arreglos se declaran usando la palabra clave Array().
+
+Matrices
+
+Las matrices son arreglos bidimensionales. Las matrices se declaran usando la palabra clave Array(), seguida de dos pares de corchetes.
+
+
+
+Duplas
+
+Las duplas son arreglos de dos elementos. Las duplas se declaran usando la palabra clave Array(), seguida de dos valores. No es un término común en JavaScript, pero podría ser un par de valores
+
+
+
+
+Los elementos de una dupla se pueden acceder usando índices numéricos, comenzando desde 0.
+
+
+
+
+Objetos 
+
+Un objeto es una colección de datos de diferentes tipos. Los objetos se declaran usando la palabra clave Object().
+
+Los objetos son una de las características más importantes de JavaScript. Los objetos permiten representar datos complejos de una manera eficiente.
+
+
+
+Los elementos de un objeto se acceden usando una cadena de caracteres.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introducción a  objetos 
+
+Un objeto en JavaScript es una colección de datos relacionados y/o funcionalidades. Los objetos se pueden usar para representar una variedad de cosas, como personas, lugares, cosas o eventos.
+
+Estructura de un objeto
+Un objeto se define entre llaves {}. Las propiedades de un objeto se definen como pares clave-valor. La clave es un nombre que identifica la propiedad, y el valor es el dato asociado con la propiedad.
+
+
+
+isomorfismo 
+
+El isomorfismo es la capacidad de ejecutar el mismo código en diferentes entornos. En el contexto de JavaScript, el isomorfismo se refiere a la capacidad de ejecutar JavaScript en el lado del cliente y del lado del servidor.
+
+
+
+
+ comportamiento js
+
+El comportamiento de JavaScript se basa en el modelo de programación de objetos. Los objetos en JavaScript son colecciones de datos y funciones. Los objetos se pueden crear usando la sintaxis de objeto literal.
+
+
+Tipos de operadores:
+
+
+JavaScript tiene varios tipos de operadores, como aritméticos (+, -, *, /), de comparación (==, !=, ===, !==, <, >, <=, >=), lógicos (&&, ||, !), de asignación (=, +=, -=, *=, /=), entre otros.
+
+
+Los operadores son herramientas que nos permiten hacer cálculos o comparaciones en JavaScript. Por ejemplo, podemos sumar números (+), comparar si son iguales (==), o asignar un valor a una variable (=).
+
+
+
+1. **Operadores Aritméticos**:
+   - `+` : Suma
+   - `-` : Resta
+   - `*` : Multiplicación
+   - `/` : División
+   - `%` : Módulo (resto de la división)
+   - `**` : Potencia
+
+2. **Operadores de Asignación**:
+   - `=` : Asignación
+   - `+=` : Suma y asignación
+   - `-=` : Resta y asignación
+   - `*=` : Multiplicación y asignación
+   - `/=` : División y asignación
+   - `%=` : Módulo y asignación
+
+3. **Operadores de Comparación**:
+   - `==` : Igual a (compara el valor)
+   - `===` : Igual a y del mismo tipo (compara el valor y el tipo)
+   - `!=` o `!==` : No igual a
+   - `>` : Mayor que
+   - `<` : Menor que
+   - `>=` : Mayor o igual que
+   - `<=` : Menor o igual que
+
+4. **Operadores Lógicos**:
+   - `&&` : AND lógico
+   - `||` : OR lógico
+   - `!` : NOT lógico
+
+
+
+
+
+
+5. **Operador Ternario (Conditional)**:
+   - `condition ? expr1 : expr2` : Si `condition` es verdadera, evalúa `expr1`, de lo contrario evalúa `expr2`
+
+6. **Operadores de Incremento/Decremento**:
+   - `++` : Incremento
+   - `--` : Decremento
+
+7. **Operadores Bit a Bit**:
+   - `&` : AND a nivel de bits
+   - `|` : OR a nivel de bits
+   - `^` : XOR a nivel de bits
+   - `~` : NOT a nivel de bits
+   - `<<` : Desplazamiento a la izquierda
+   - `>>` : Desplazamiento a la derecha
+   - `>>>` : Desplazamiento a la derecha sin signo
+
+8. **Operadores de Concatenación**:
+   - `+` : Concatenación de cadenas
+
+
+
+
+
+Condicionales:
+Los condicionales se utilizan para tomar decisiones basadas en ciertas condiciones. En JavaScript, los condicionales más comunes son if, else if y else.
+
+
+Los condicionales nos permiten tomar decisiones en nuestro código. Por ejemplo, podemos decir "si esto es verdad, haz esto; de lo contrario, haz esto otro".
+
+
+
+
+Ciclos:
+Los ciclos o bucles se utilizan para ejecutar un bloque de código repetidamente. En JavaScript, los ciclos más comunes son for, while y do-while.
+
+
+Los ciclos son estructuras que nos permiten repetir una acción varias veces. Por ejemplo, podemos usar un ciclo para imprimir números del 1 al 10.
+
+
+
+
+Manejo de errores:
+El manejo de errores permite controlar situaciones inesperadas o excepcionales durante la ejecución del código. En JavaScript, se utiliza try, catch y finally.
+El manejo de errores nos ayuda a lidiar con problemas que puedan surgir mientras ejecutamos nuestro código. Por ejemplo, si intentamos dividir entre cero, JavaScript nos dará un error, pero podemos usar el manejo de errores para manejarlo de manera más amigable.
+
+
+
+Break and Continue:
+break se utiliza para salir de un ciclo, mientras que continue se utiliza para saltar a la siguiente iteración del ciclo.
+
+
+break nos permite salir de un ciclo antes de que termine, y continue nos permite saltar a la siguiente iteración del ciclo.
+
+
+
+
+Desestructuración:
+La desestructuración permite extraer valores de objetos o arreglos y asignarlos a variables individuales.
+La desestructuración nos permite extraer valores de un objeto o arreglo y asignarlos a variables individuales de manera más sencilla.
+
+
+	
+ 
+
+
+
+
+Objetos Literales:
+
+Los objetos literales son una forma de definir y crear objetos de forma directa en JavaScript.
+Los objetos literales nos permiten crear estructuras de datos simples para representar cosas del mundo real. Por ejemplo, podríamos tener un objeto que represente a una persona con propiedades como nombre, edad y ciudad.
+
+
+
+
+
+
+
+Parámetros Rest y Operador Spread:
+
+Los parámetros rest (...) nos permiten manejar un número variable de argumentos en una función, mientras que el operador spread (...) nos permite expandir un arreglo en elementos individuales.
+
+
+
+
+
+
+Arrow Function:
+
+
+Las arrow functions son una forma más corta y simple de escribir funciones en JavaScript. Son útiles para funciones pequeñas y expresivas.
+
+
+
+Prototipos prototype
+
+Concepto fundamental para la herencia y la reutilización de código, es decir un  objeto que sirve como plantilla para crear otros objetos. (“Object.prototype”)
+
+Cuando se crea un objeto con la función new, el motor de JavaScript busca un objeto prototipo asociado con la función constructora. Si se encuentra un prototipo, el nuevo objeto hereda todas sus propiedades y métodos.
+
+
+
+
+
+
+
+
+
+Herencia prototípica 
+
+Es un mecanismo en JavaScript que permite a los objetos heredar propiedades y métodos de otros objetos.Se basa en la idea de que cada objeto tiene un prototipo, que es otro objeto que actúa como plantilla.
+ 
+
+Clases  y Herencia
+
+En JavaScript, una clase es una plantilla para crear objetos que define propiedades y métodos. Las clases se definen con la palabra clave class y el nombre de la clase.
+
+
+  class Persona {
+    constructor(nombre, edad) {
+      this.nombre = nombre;
+      this.edad = edad;
+    }
+ 
+    saludar() {
+      console.log(`Hola, soy ${this.nombre}`);
+    }
+  }
+ 
+  const persona1 = new Persona("Juan", 23);
+  persona1.saludar(); // Salida: "Hola, soy Juan"
+ 
+
+
+La herencia con clases en JavaScript se realiza utilizando la palabra clave “extends. “
+
+La herencia es un mecanismo que permite a una clase heredar las propiedades y métodos de otra clase. La clase que hereda se llama clase derivada o subclase, y la clase de la que hereda se llama clase base o superclase.
+
+
+
+  class Estudiante extends Persona {
+    constructor(nombre, matricula) {
+      super(nombre);
+      this.matricula = matricula;
+    }
+ 
+    estudiar() {
+      console.log(`Estoy estudiando.`);
+    }
+  }
+ 
+
+
+
+
+Métodos estáticos  Get y Set 
+
+Métodos estáticos:
+
+Son funciones asociadas a una clase, pero no a un objeto en particular.
+Se invocan utilizando el nombre de la clase seguido del punto y el nombre del método, sin necesidad de instanciar la clase.
+Se utilizan para realizar operaciones que no dependen del estado de un objeto individual, sino de la clase en sí.
+
+
+  class MathUtils {
+    static factorial(n) {
+      if (n === 0 || n === 1) {
+        return 1;
+      } else {
+        return n * MathUtils.factorial(n - 1);
+      }
+    }
+  }
+ 
+  console.log(MathUtils.factorial(5)); // Imprime 120
+ 
+
+
+ class MathHelper {
+    static sumar(a, b) {
+      return a + b;
+    }
+  }
+ 
+  console.log(MathHelper.sumar(3, 4)); // Salida: 7
+ 
+
+
+
+
+
+
+
+
+
+Getters:
+Son funciones especiales que se definen en un objeto para controlar el acceso a una propiedad.
+Se invocan como si fueran propiedades del objeto, utilizando la notación de punto (.).
+Permiten realizar operaciones adicionales al momento de "leer" la propiedad, como validaciones o cálculos.
+	
+  class Persona {
+    constructor(nombre) {
+      this._nombre = nombre;
+    }
+ 
+    get nombre() {
+      return this._nombre.toUpperCase();
+    }
+  }
+ 
+  const persona1 = new Persona("Juan");
+  console.log(persona1.nombre); // Salida: "JUAN"
+ 
+Setters:
+Son funciones especiales que se definen en un objeto para controlar la asignación a una propiedad.
+Se invocan como si fueran propiedades del objeto, pero utilizando el operador de asignación (=).
+Permiten realizar operaciones adicionales antes de asignar un valor a la propiedad, como validaciones o conversiones.
+
+const persona = {
+    _edad: 0,
+    set edad(nuevaEdad) {
+      if (nuevaEdad >= 0) {
+        this._edad = nuevaEdad;
+      } else {
+        console.error("La edad no puede ser negativa");
+      }
+    },
+  };
+ 
+  persona.edad = 25;
+  persona.edad = -10; // Imprime un error en la consola
+ 
+  console.log(persona.edad); // Imprime 25
+
+  class Persona {
+    constructor(nombre) {
+      this._nombre = nombre;
+    }
+ 
+    get nombre() {
+      return this._nombre;
+    }
+ 
+    set nombre(nuevoNombre) {
+      this._nombre = nuevoNombre.trim();
+    }
+  }
+ 
+  const persona1 = new Persona("   Juan   ");
+  console.log(persona1.nombre); // Salida: "Juan"
+ 
+  persona1.nombre = "  María  ";
+  console.log(persona1.nombre); // Salida: "María"
+ 
+
+
+Objeto console 
+
+
+El objeto console en JavaScript proporciona acceso a la consola de depuración del navegador o del entorno de ejecución actual. Esta consola permite emitir mensajes, realizar inspecciones de variables, ejecutar código y mucho más.
+Métodos principales del objeto console:
+console.log(...): Imprime un mensaje o una lista de argumentos separados por espacios en la consola.
+console.info(...): Similar a console.log, pero suele utilizarse para mensajes informativos menos críticos.
+console.warn(...): Imprime un mensaje de advertencia en la consola, que suele estar coloreado de amarillo para llamar la atención.
+console.error(...): Imprime un mensaje de error en la consola, que suele estar coloreado de rojo para indicar un problema.
+console.debug(...): Similar a console.log, pero su uso suele estar habilitado solo en entornos de desarrollo para mensajes de depuración más específicos.
+
+
+
+
+
+  console.log("Hola, mundo!");
+console.info("Este es un mensaje informativo.");
+console.warn("Tenga cuidado, hay una posible advertencia.");
+console.error("¡Se ha producido un error!");
+
+
+
+
+
+Objeto Date
+El objeto Date en JavaScript representa un momento específico en el tiempo. Permite trabajar con fechas y horas, realizar cálculos y obtener información sobre la fecha actual o una fecha específica.
+
+Se puede crear un objeto Date utilizando la función new Date().
+También se puede crear un objeto Date utilizando una cadena de fecha y hora como argumento.
+
+
+
+const fechaActual = new Date();
+const fechaEspecifica = new Date("2023-12-01T10:00:00");
+
+
+
+
+
+getDate(): Obtiene el día del mes (1-31).
+getMonth(): Obtiene el mes (0-11, donde 0 es enero).
+getFullYear(): Obtiene el año completo (por ejemplo, 2023).
+getHours(): Obtiene la hora (0-23).
+getMinutes(): Obtiene los minutos (0-59).
+getSeconds(): Obtiene los segundos (0-59).
+getMilliseconds(): Obtiene los milisegundos (0-999).
+toDateString(): Convierte la fecha a una cadena con formato de fecha.
+toTimeString(): Convierte la fecha a una cadena con formato de hora.
+toLocaleString(): Convierte la fecha a una cadena con formato de fecha y hora
+
+
+
+
+
+
+
+Objeto Math
+
+El objeto Math en JavaScript proporciona acceso a funciones matemáticas como la suma, la resta, la multiplicación, la división, la potenciación, las raíces cuadradas, las funciones trigonométricas y muchas más.
+Métodos del objeto Math:
+Math.abs(numero): Devuelve el valor absoluto de un número.
+Math.sqrt(numero): Devuelve la raíz cuadrada de un número.
+Math.pow(numero, potencia): Devuelve el resultado de elevar un número a una potencia.
+Math.round(numero): Redondea un número al entero más cercano.
+Math.floor(numero): Redondea un número hacia abajo al entero más cercano.
+Math.ceil(numero): Redondea un número hacia arriba al entero más cercano.
+Math.random(): Devuelve un número aleatorio entre 0 y 1.
+
+
+console.log(Math.abs(-5)); // Imprime 5
+console.log(Math.sqrt(9)); // Imprime 3
+console.log(Math.pow(2, 3)); // Imprime
+
+
+
+
+
+Operador de corto circuito javascript 
+
+
+Los operadores de cortocircuito en JavaScript son dos:
+Operador AND lógico (&&)
+Operador OR lógico (||)
+Estos operadores se llaman "de cortocircuito" porque detienen la evaluación de una expresión tan pronto como se conoce el resultado final.
+
+
+Operador AND lógico (&&)
+El operador && se evalúa de izquierda a derecha. Si el primer operando es false, no se evalúa el segundo operando y se devuelve false. Si el primer operando es true, se evalúa el segundo operando y se devuelve el valor del segundo operando.
+
+const a = 10;
+const b = 0;
+const resultado = a > 0 && b > 0;
+console.log(resultado); // Imprime "false" (b es menor que 0)
+
+
+Operador OR lógico (||)
+El operador || se evalúa de izquierda a derecha. Si el primer operando es true, no se evalúa el segundo operando y se devuelve true. Si el primer operando es false, se evalúa el segundo operando y se devuelve el valor del segundo operando.
+
+const a = 10;
+const b = 0;
+
+
+const resultado = a > 0 || b > 0;
+
+
+console.log(resultado); // Imprime "false" (b es menor que 0)
+
+
+
+Métodos para interactuar con el usuario en  alert, confirm, y prompt
+
+
+Estos tres métodos integrados en JavaScript permiten la interacción con el usuario a través de ventanas emergentes:
+	
+alert(mensaje)
+
+Muestra un mensaje de texto en una ventana modal (que bloquea la interacción con la página hasta que se cierra).
+No tiene valor de retorno.
+Se utiliza para mostrar información al usuario que no requiere confirmación o entrada de datos.
+
+
+alert("¡Hola, mundo!");
+
+
+confirm(mensaje)
+
+Muestra un mensaje de texto y dos botones: "OK" y "Cancelar" en una ventana modal.
+Devuelve true si el usuario presiona "OK", y false si presiona "Cancelar".
+Se utiliza para obtener la confirmación del usuario antes de realizar una acción.
+
+const respuesta = confirm("¿Estás seguro de que quieres continuar?");
+if (respuesta) {
+  console.log("El usuario confirmó la acción.");
+} else {
+  console.log("El usuario canceló la acción.");
+
+
+prompt(mensaje, valorPorDefecto)
+
+Muestra un mensaje de texto y un campo de texto para que el usuario introduzca información en una ventana modal.
+Tiene dos argumentos:
+mensaje: El texto que se muestra al usuario.
+valorPorDefecto: El valor inicial que se muestra en el campo de texto (opcional).
+Devuelve el valor que el usuario introduce en el campo de texto, o null si el usuario presiona "Cancelar".
+Se utiliza para solicitar información al usuario.
+const respuesta = confirm("¿Estás seguro de que quieres continuar?");
+
+if (respuesta) {
+  console.log("El usuario confirmó la acción.");
+} else {
+  console.log("El usuario canceló la acción.");
+}
+
+Expresiones regulares (regex)
+
+Las expresiones regulares (regex) son patrones que se utilizan para buscar y modificar cadenas de texto. Son una herramienta poderosa para procesar texto en JavaScript y en muchos otros lenguajes de programación.
+
+Componentes básicos de las regex:
+Caracteres literales: Coinciden con sí mismos.
+Metacaracteres: Tienen un significado especial en las regex.
+Construcciones: Combinan caracteres y metacaracteres para crear patrones más complejos.
+^[a-z]+$: Coincide con cualquier cadena que solo contenga letras minúsculas.
+\d{3}-\d{3}-\d{4}: Coincide con un número de teléfono de EE. UU.
+.*@.*\.com: Coincide con una dirección de correo electrónico.
+Se pueden usar con las funciones String.prototype.match(), String.prototype.search(), String.prototype.replace(), y String.prototype.split().
+
+
+Funciones anónimas autoejecutables 
+
+Las funciones anónimas autoejecutables son funciones que se definen y se ejecutan al mismo tiempo. Se utilizan para encapsular código y evitar la contaminación del espacio de nombres global.
+
+Encapsulan código y lo aíslan del espacio de nombres global.
+Evitan la contaminación del espacio de nombres global.
+Permiten crear código modular y reutilizable.
+
+
+
+
+
+Módulos, 
+En JavaScript, los módulos son una forma de organizar el código en archivos separados. Esto permite dividir un proyecto grande en partes más pequeñas y manejables, lo que facilita la lectura, el mantenimiento y la reutilización del código.
+
+Módulo math.js:
+
+
+Módulo main.js:
+
+
+import y export
+Import: Se utiliza para importar módulos a un archivo JavaScript. Esto permite acceder a las variables, funciones y clases que se exportan desde el módulo importado.
+
+Export: Se utiliza para exportar variables, funciones y clases desde un módulo para que puedan ser importados por otros módulos.
+
+
+
+Permiten organizar el código en unidades independientes y reutilizables.
+Facilitan la colaboración entre desarrolladores.
+Permiten crear aplicaciones más grandes y complejas.
+Creación de bibliotecas de código reutilizable.
+Implementación de la arquitectura de componentes.
+Desarrollo de aplicaciones web a gran escala.
+</p>
+</pre>
